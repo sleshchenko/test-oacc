@@ -32,7 +32,8 @@ public class User {
     }
 
     public User create() {
-        return data.put(this.login, this);
+        data.put(this.login, this);
+        return this;
     }
 
     public void save() {

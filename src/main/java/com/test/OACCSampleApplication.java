@@ -44,7 +44,7 @@ public class OACCSampleApplication {
     private static void createAdmin(AccessControlContext accessControlContext) {
         // authenticate as the system resource (the super user) to set up an initial admin
         accessControlContext.authenticate(Resources.getInstance(0),
-                                          PasswordCredentials.newInstance("yourOaccSystemPassword".toCharArray()));
+                                          PasswordCredentials.newInstance("test".toCharArray()));
 
 //         persist the admin in your application
 //         for example:
